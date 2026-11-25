@@ -1,0 +1,45 @@
+name: Build Android APK (The Legendary Radio)
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'
+          channel: 'stable'
+
+      - name: Ensure Android project files exist
+        run: |
+          flutter create --platforms=android --org com.thelegendarycats --project-name the_legendary_radio .
+
+      - name: Restore custom AndroidManifest and MainActivity
+        run: |
+          git checkout -- android/app/src/main/AndroidManifest.xml android/app/src/main/kotlin/ android/app/src/main/res/ || true
+
+      - name: Get Flutter dependencies
+        run: flutter pub get
+
+      - name: Build Release APK
+        run: flutter build apk --release
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: The-Legendary-Radio-Premium-v4.1-APK
+          path: build/app/outputs/flutter-apk/app-release.apk

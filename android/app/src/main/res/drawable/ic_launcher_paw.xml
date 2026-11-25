@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Deep black rounded background -->
+    <path
+        android:fillColor="#09070F"
+        android:pathData="M18,8 L90,8 Q100,8 100,18 L100,90 Q100,100 90,100 L18,100 Q8,100 8,90 L8,18 Q8,8 18,8 Z" />
+    <!-- Neon border -->
+    <path
+        android:strokeColor="#FF2E97"
+        android:strokeWidth="2.5"
+        android:fillColor="#00000000"
+        android:pathData="M18,8 L90,8 Q100,8 100,18 L100,90 Q100,100 90,100 L18,100 Q8,100 8,90 L8,18 Q8,8 18,8 Z" />
+    <!-- Cyan Radio Waves -->
+    <path
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M34,26 Q54,14 74,26" />
+    <path
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M41,32 Q54,23 67,32" />
+    <!-- Four Neon Pink Paw Toe Beans -->
+    <path android:fillColor="#FF2E97" android:pathData="M28,53 m-7,0 a7,9 0 1,0 14,0 a7,9 0 1,0 -14,0" />
+    <path android:fillColor="#FF2E97" android:pathData="M45,42 m-7.5,0 a7.5,10 0 1,0 15,0 a7.5,10 0 1,0 -15,0" />
+    <path android:fillColor="#FF2E97" android:pathData="M63,42 m-7.5,0 a7.5,10 0 1,0 15,0 a7.5,10 0 1,0 -15,0" />
+    <path android:fillColor="#FF2E97" android:pathData="M80,53 m-7,0 a7,9 0 1,0 14,0 a7,9 0 1,0 -14,0" />
+    <!-- Main Pad as Turntable Vinyl Disc -->
+    <path android:fillColor="#FF2E97" android:pathData="M54,75 m-21,0 a21,18 0 1,0 42,0 a21,18 0 1,0 -42,0" />
+    <path android:fillColor="#121426" android:pathData="M54,75 m-16,0 a16,14 0 1,0 32,0 a16,14 0 1,0 -32,0" />
+    <path android:fillColor="#00F0FF" android:pathData="M54,75 m-5,0 a5,4.5 0 1,0 10,0 a5,4.5 0 1,0 -10,0" />
+    <path android:fillColor="#09070F" android:pathData="M54,75 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+    <!-- Tonearm -->
+    <path
+        android:strokeColor="#E2E8F0"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M73,63 L67,74 L61,76" />
+</vector>
